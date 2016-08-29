@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Please login</h2>
+      {{validated-input model=model valuePath='email' placeholder='Email'}}
+      {{validated-input type='password' model=model valuePath='password' placeholder='Password'}}
+      <button {{action "login" model}} class="btn btn-lg btn-primary btn-block"> Login </button>  
+    </form>
+  </div>
